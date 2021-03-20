@@ -16,7 +16,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": 22,
-  "iteration": 1616185987842,
+  "iteration": 1616245536466,
   "links": [],
   "panels": [
     {
@@ -599,7 +599,7 @@
       "seriesOverrides": [
         {
           "$$hashKey": "object:192",
-          "alias": "1-minute average",
+          "alias": "Percentage used",
           "color": "#8AB8FF",
           "fillGradient": 5,
           "linewidth": 2
@@ -614,7 +614,7 @@
           "expr": "(runtime_used_memory{serverstatistics_server=~\"$server\"} / runtime_total_memory{serverstatistics_server=~\"$server\"}) * 100",
           "hide": false,
           "interval": "",
-          "legendFormat": "1-minute average",
+          "legendFormat": "Percentage used",
           "refId": "B"
         }
       ],
@@ -622,7 +622,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "Ticks Per Second",
+      "title": "Memory usage",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -796,7 +796,7 @@
       {
         "allValue": null,
         "current": {
-          "selected": false,
+          "selected": true,
           "text": "development",
           "value": "development"
         },
@@ -809,12 +809,23 @@
         "label": "Server",
         "multi": false,
         "name": "server",
-        "options": [],
+        "options": [
+          {
+            "selected": false,
+            "text": "content",
+            "value": "content"
+          },
+          {
+            "selected": true,
+            "text": "development",
+            "value": "development"
+          }
+        ],
         "query": {
           "query": "label_values(serverstatistics_server)",
           "refId": "StandardVariableQuery"
         },
-        "refresh": 2,
+        "refresh": 0,
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
@@ -834,5 +845,5 @@
   "timezone": "",
   "title": "Health & performance summary",
   "uid": "3WHDXNwMz",
-  "version": 15
+  "version": 16
 }

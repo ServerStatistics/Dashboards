@@ -8,4 +8,4 @@ The following ServerStatistics global tags are required;
 If you do not have these tags, you must configure them in your ServerStatistics plugin or modify the dashboard to modify another tag or to remove the tag entirely.
 
 ## Reference
-![Reference picture](https://i.imgur.com/sf3eduN.png)
+![Reference picture](https://i.imgur.com/ohNfyMr.png)
